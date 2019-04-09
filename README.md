@@ -36,4 +36,4 @@ In this assignment, you'll create a train schedule application that incorporates
 
 ### Example Site
 
-![train homework](Train_Time_Image.png)
+https://dschafroth97.github.io/TrainScheduler/
