@@ -6,6 +6,7 @@ html, body {
 
 .hr-underline {
     border: 1px solid blue;
+    width: 80%;
 }
 
 .jumbotron p {
@@ -33,7 +34,7 @@ html, body {
 
 
 
-/* MEDIA QUERY
+/* MEDIA QUERY */
 .fa-quote-left {
-    margin-left: 10rem;
-} */
+    padding: 10px;
+}
