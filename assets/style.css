@@ -1,11 +1,26 @@
+/* General */
+
 html, body {
     min-height: 100%;
 }
 
+body {
+    background: white;
+}
+
+.card {
+    border: 1.2px solid #007bff;
+    margin-bottom: 1.4rem;
+}
+
 /* Title */
 
+.fa-quote-left {
+    padding: 10px;
+}
+
 .hr-underline {
-    border: 1px solid blue;
+    border-top: 1.8px solid #007bff;
     width: 80%;
 }
 
@@ -13,6 +28,21 @@ html, body {
     font-size: 1.3rem;
     letter-spacing: .5px;
 }
+
+.jumbotron {
+    padding: 1.5rem;
+    border: 1.2px solid #007bff;
+}
+
+/* Schedule */
+
+
+/* Add New Train */
+
+#formCard {
+    margin-bottom: 3rem;
+}
+
 
 
 
@@ -35,6 +65,3 @@ html, body {
 
 
 /* MEDIA QUERY */
-.fa-quote-left {
-    padding: 10px;
-}

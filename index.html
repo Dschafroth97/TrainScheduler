@@ -19,24 +19,88 @@
 
     <!-- Begin Title -->
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron bg-transparent">
             <div class="container text-center">
-                <h1 class="display-4 font-weight-bold">Train Schedule</h1><hr class="hr-underline">
+                <h1 class="display-4 font-weight-bold">Train Schedule</h1>
+                <hr class="hr-underline">
                 <i class="fas fa-quote-left d-flex justify-content-start"></i>
-                <p class="lead">Be like a train; go in the rain, go in the sun, go in the storm, go in the dark tunnels!<br> Be like a train; concentrate on your road and go with no hesitation!</p>
+                <p class="lead">Be like a train; go in the rain, go in the sun, go in the storm, go in the dark
+                    tunnels!<br> Be like a train; concentrate on your road and go with no hesitation!</p>
+            </div>
+        </div>
+
+        <!-- End Title -->
+        <!-- Begin Train Schedule -->
+
+        <div class="card">
+            <div class="card-header bg-primary font-weight-bold text-white">
+                Current Train Schedule
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td>Polar Express</td>
+                            <td>The North Pole</td>
+                            <td>Nobody really knows (?)</td>
+                            <td>260 days</td>
+                            <td>Very Many</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-    <!-- End Title -->
-
-    <!-- Begin Train Schedule -->
-
     <!-- End Train Schedule -->
 
     <!-- Begin Input Form -->
+    <div class="container">
+        <div class="card" id="formCard">
+            <div class="card-header bg-primary font-weight-bold text-white">
+                Add New Train
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name</label>
+                        <input type="text" class="form-control" id="trainName" placeholder="1788-L">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Virtual Reality">
+                    </div>
+                    <div class="form-group">
+                        <label for="startTime">First Train Time (HH:mm Military Time)</label>
+                        <input type="text" class="form-control" id="startTime" placeholder="00:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="123">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- End Input Form -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="assets/logic.js"></script>
 </body>
 
