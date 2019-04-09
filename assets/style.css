@@ -1,4 +1,39 @@
-h1 {
-    color: orange;
-    font-size: 10rem;
+html, body {
+    min-height: 100%;
 }
+
+/* Title */
+
+.hr-underline {
+    border: 1px solid blue;
+}
+
+.jumbotron p {
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY
+.fa-quote-left {
+    margin-left: 10rem;
+} */
