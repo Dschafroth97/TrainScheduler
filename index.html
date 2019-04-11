@@ -68,19 +68,19 @@
                 <form>
                     <div class="form-group">
                         <label for="trainName">Train Name</label>
-                        <input type="text" class="form-control" id="trainName" placeholder="1788-L">
+                        <input type="text" class="form-control" id="trainName" placeholder="Golden Eagle">
                     </div>
                     <div class="form-group">
                         <label for="destination">Destination</label>
-                        <input type="text" class="form-control" id="destination" placeholder="Virtual Reality">
+                        <input type="text" class="form-control" id="destination" placeholder="Downtown Dallas">
                     </div>
                     <div class="form-group">
-                        <label for="startTime">First Train Time (HH:mm Military Time)</label>
-                        <input type="text" class="form-control" id="startTime" placeholder="00:00">
+                        <label for="startTime">First Train Arrival (HH:mm Military Time)</label>
+                        <input type="text" class="form-control" id="startTime" placeholder="22:00">
                     </div>
                     <div class="form-group">
                         <label for="frequency">Frequency (min)</label>
-                        <input type="text" class="form-control" id="frequency" placeholder="123">
+                        <input type="text" class="form-control" id="frequency" placeholder="45">
                     </div>
                     <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -88,14 +88,24 @@
         </div>
     </div>
     <!-- End Input Form -->
+
+    <!-- Scripts -->
+
+    <!-- Moment JS -->
     <script src="https://unpkg.com/moment"></script>
+
+    <!-- Firebase Database -->
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <!-- Bootstrap Plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- Personal Logic -->
     <script src="assets/logic.js"></script>
 </body>
 

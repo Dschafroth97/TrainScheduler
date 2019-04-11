@@ -14,7 +14,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 // when user clicks submit button
-$("#submit").on("click", function(event){
+$("#submit").on("click", function (event) {
 
     // prevents page from refreshing when submit button is pressed
     event.preventDefault();
@@ -34,10 +34,10 @@ $("#submit").on("click", function(event){
     }
 
     // Testing
-    console.log(newTrain.name);
-    console.log(newTrain.dest);
-    console.log(newTrain.time);
-    console.log(newTrain.freq);
+    // console.log(newTrain.name);
+    // console.log(newTrain.dest);
+    // console.log(newTrain.time);
+    // console.log(newTrain.freq);
 
     // pushes newTrain object to database
     database.ref().push(newTrain);
@@ -51,7 +51,7 @@ $("#submit").on("click", function(event){
 });
 
 // pulls info from database 
-database.ref().on("child_added", function(childSnapshot){
+database.ref().on("child_added", function (childSnapshot) {
 
     // Console logs to check data being pulled
     console.log(childSnapshot.val());
@@ -72,14 +72,15 @@ database.ref().on("child_added", function(childSnapshot){
     var nextTrainCon = moment(nextTrain).format("HH:mm");
 
     // Testing
-    console.log(name);
-    console.log(destination);
-    console.log(start);
-    console.log(frequency);
-    console.log(current);
-    console.log(nextTrainCon);
-    console.log(timeRemaining);
+    // console.log(name);
+    // console.log(destination);
+    // console.log(start);
+    // console.log(frequency);
+    // console.log(current);
+    // console.log(nextTrainCon);
+    // console.log(timeRemaining);
 
+    // Creating table row and data
     var newRow = $("<tr>").append(
         $("<td>").text(name),
         $("<td>").text(destination),
@@ -88,15 +89,20 @@ database.ref().on("child_added", function(childSnapshot){
         $("<td>").text(timeRemaining),
     );
 
+    // Appending onto empty tbody
     $("#tbody").append(newRow);
 
 });
 
+// Function to display current time
 function currentTime() {
+
+    // Storing current time in variable, formatting and adding that text to HTML page
     var timeNow = moment();
     var displayTime = moment(timeNow).format("HH:mm");
     $("#currentTime").text(displayTime);
 };
 
+// Calling function and refresh rate
 currentTime();
-window.setInterval(currentTime, 30000);
+window.setInterval(currentTime, 5000);
