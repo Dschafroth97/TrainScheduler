@@ -64,9 +64,7 @@ database.ref().on("child_added", function (childSnapshot) {
 
     // Math conversions
     var firstTime = moment(start, "HH:mm").subtract(1, "years");
-    var current = moment();
-    var diffTime = moment().diff(moment(firstTime), "minutes");
-    var remainder = diffTime % frequency;
+    var remainder = moment().diff(moment(firstTime), "minutes") % frequency;
     var timeRemaining = frequency - remainder;
     var nextTrain = moment().add(timeRemaining, "minutes");
     var nextTrainCon = moment(nextTrain).format("HH:mm");
